@@ -187,6 +187,7 @@ padding: 15px 22px 20px;
 
 .chat-footer .chat-form {
     display: flex;
+    position: relative;
     align-items: center;
     background: #ffff;
     border-radius: 32px;
@@ -279,4 +280,19 @@ padding: 15px 22px 20px;
 .chat-form .file-upload-wrapper.file-uploaded img,
 .chat-form .file-upload-wrapper.file-uploaded:hover #file-cancel {
     display: block;
+}
+
+em-emoji-picker {
+    position: absolute;
+    left: 50%;
+    top: -337px;
+    width: 100%;
+    max-width: 350px;
+    max-height: 330px;
+    visibility: hidden;
+    transform: translateX(-50%);
+}
+
+body.show-emoji-picker em-emoji-picker {
+    visibility: visible;
 }
